@@ -38,7 +38,7 @@ yarn cz
 -   [x] 角色权限 restful api
 -   [x] 单元测试
 -   [x] pm2 部署
--   [ ] redis 缓存
+-   [x] redis 缓存
 -   [ ] 文件缓存 + cdn 加速
 -   [ ] 安全管理
 -   [ ] 日志系统

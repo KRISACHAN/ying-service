@@ -38,7 +38,7 @@ class OssService {
                 const [curKey] = data.name.split('/');
                 data.url = data.url.replace(
                     `${process.env.OSS_BASE_URL}/${curKey}`,
-                    `${process.env.BASE_URL_URL}/${curKey}`,
+                    `${process.env.BASE_OSS_URL}/${curKey}`,
                 );
                 return data;
             });
@@ -54,7 +54,7 @@ class OssService {
         const [curKey] = res.name.split('/');
         const resUrl = res.url.replace(
             `${process.env.OSS_BASE_URL}/${curKey}`,
-            `${process.env.BASE_URL_URL}/${curKey}`,
+            `${process.env.BASE_OSS_URL}/${curKey}`,
         );
         return {
             name: name,

@@ -7,7 +7,8 @@ import {
 } from '@utils/init';
 import bodyParser from 'koa-body';
 import cors from '@koa/cors';
-import catchError from '@middlewares/exception';
+import catchErrorMiddleware from '@middlewares/exception';
+import cacheMiddleware from '@middlewares/cache';
 import { getIP } from '@utils/helpers';
 import log from '@utils/log';
 import './env';
@@ -15,7 +16,8 @@ import './env';
 const app = new Koa();
 
 app.use(cors());
-app.use(catchError);
+app.use(catchErrorMiddleware);
+app.use(cacheMiddleware);
 app.use(
     bodyParser({
         multipart: true,
