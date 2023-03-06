@@ -1,0 +1,9 @@
+.git/
+admin/
+dist/
+docs/
+node_modules/
+public/
+sql/
+dist-app/
+www/

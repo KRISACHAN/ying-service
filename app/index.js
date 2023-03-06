@@ -1,0 +1,35 @@
+import Koa from 'koa';
+import {
+    initLoadRouters,
+    initHttpException,
+    initRatelimit,
+    initLogger,
+} from '@utils/init';
+import bodyParser from 'koa-body';
+import cors from '@koa/cors';
+import catchError from '@middlewares/exception';
+import { getIP } from '@utils/helpers';
+import log from '@utils/log';
+import './env';
+
+const app = new Koa();
+
+app.use(cors());
+app.use(catchError);
+app.use(
+    bodyParser({
+        multipart: true,
+    }),
+);
+initRatelimit(app);
+initLogger(app);
+initLoadRouters(app);
+initHttpException();
+
+app.listen(process.env.PORT, () => {
+    log.verbose('        App running at:');
+    log.verbose(`        - Local: http://localhost:${process.env.PORT}`);
+    log.verbose(`        - Netword: ${getIP()}:${process.env.PORT}`);
+});
+
+export default app;
