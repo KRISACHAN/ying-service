@@ -7,16 +7,6 @@ const router = new Router({
     prefix: '/api/v1/oss',
 });
 
-router.get('/buckets', adminAuthMiddleware, async ctx => {
-    const res = await ossService.fetchBuckets();
-    ctx.body = resolve.json(res);
-});
-
-router.get('/list', adminAuthMiddleware, async ctx => {
-    const res = await ossService.fetchList();
-    ctx.body = resolve.json(res);
-});
-
 router.post('/upload', adminAuthMiddleware, async ctx => {
     const body = ctx.request.body;
     const { name, resource, tagging } = body;

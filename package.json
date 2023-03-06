@@ -16,6 +16,7 @@
         "jest": "NODE_ENV=testing jest --colors --coverage tests",
         "lint": "eslint --fix app",
         "prettier": "prettier app --write",
+        "prettier:all": "prettier . --write",
         "cz": "yarn prettier && yarn lint && git add . && git cz && git push",
         "prepare": "husky install"
     },

@@ -4,7 +4,7 @@ const router = new Router({
     prefix: '',
 });
 
-router.all('/api/health', async ctx => {
+router.all('/health', async ctx => {
     ctx.body = 'hello world';
 });
 

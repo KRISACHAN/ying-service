@@ -1,4 +1,4 @@
-const request = require('supertest')
-const server = require('../app').callback()
+const request = require('supertest');
+const server = require('../app').callback();
 
-module.exports = request(server)
+module.exports = request(server);

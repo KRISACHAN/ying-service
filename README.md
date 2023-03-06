@@ -1,7 +1,7 @@
 # ying-service
 
-> * 一个 nodejs 服务
-> * 基于 [nodejs-koa-blog](https://github.com/lfb/nodejs-koa-blog) 的二次开发
+> -   一个 nodejs 服务
+> -   基于 [nodejs-koa-blog](https://github.com/lfb/nodejs-koa-blog) 的二次开发
 
 ## 运行命令
 
@@ -33,13 +33,14 @@ yarn cz
 
 ## TODOS
 
-- [x] 项目脚手架
-- [x] mysql 数据库
-- [x] 角色权限 restful api
-- [x] 单元测试
-- [x] pm2 部署
-- [ ] redis 缓存
-- [ ] 文件缓存 + cdn 加速
-- [ ] 安全管理
-- [ ] 日志系统
-- [ ] 容器化
+-   [x] 项目脚手架
+-   [x] mysql 数据库
+-   [x] 角色权限 restful api
+-   [x] 单元测试
+-   [x] pm2 部署
+-   [ ] redis 缓存
+-   [ ] 文件缓存 + cdn 加速
+-   [ ] 安全管理
+-   [ ] 日志系统
+-   [ ] 容器化
+-   [ ] 文档

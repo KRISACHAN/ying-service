@@ -9,13 +9,11 @@ const czConfig = {
         { value: 'test', name: '测试: 测试代码' },
         {
             value: 'build',
-            name:
-                '工具: 变更项目构建或外部依赖（例如scopes: webpack、gulp、npm等）',
+            name: '工具: 变更项目构建或外部依赖（例如scopes: webpack、gulp、npm等）',
         },
         {
             value: 'ci',
-            name:
-                '集成: 更改持续集成软件的配置文件和package中的scripts命令，例如scopes: Travis, Circle等',
+            name: '集成: 更改持续集成软件的配置文件和package中的scripts命令，例如scopes: Travis, Circle等',
         },
         {
             value: 'chore',

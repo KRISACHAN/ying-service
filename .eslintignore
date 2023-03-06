@@ -3,3 +3,4 @@ node_modules/
 public/
 sql/
 dist-app/
+tests/
