@@ -15,6 +15,7 @@
         "pm2": "pm2 reload ecosystem.config.js",
         "jest": "NODE_ENV=testing jest --colors --coverage tests",
         "lint": "eslint --fix app",
+        "lint:all": "eslint --fix .",
         "prettier": "prettier app --write",
         "prettier:all": "prettier . --write",
         "cz": "yarn prettier && yarn lint && git add . && git cz && git push",

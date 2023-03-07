@@ -35,11 +35,12 @@ yarn cz
 
 -   [x] 项目脚手架
 -   [x] mysql 数据库
--   [x] 角色权限 restful api
+-   [x] 基础角色 api
 -   [x] 单元测试
 -   [x] pm2 部署
 -   [x] redis 缓存
--   [ ] 文件缓存 + cdn 加速
+-   [x] oss 文件管理
+-   [ ] rbac 模型与 api
 -   [ ] 安全管理
 -   [ ] 日志系统
 -   [ ] 容器化
